@@ -1,0 +1,38 @@
+<head>
+  <meta charset="utf-8" />
+  <title>Image Comparison Slider</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="images">
+      <div class="img-1">
+        <img
+          style="max-width: 100%"
+          src="https://picsum.photos/1920/1080?image=1"
+          alt=""
+        />
+      </div>
+      <div class="img-2">
+        <img
+          src="https://picsum.photos/g/1920/1080?image=1"
+          class="resizeimg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="slider">
+      <div class="drag-line">
+        <span></span>
+      </div>
+      <input type="range" min="0" max="100" value="50" />
+    </div>
+    <div class="Title">
+      <p class="titleLeft">Gradient</p>
+      <p class="titleRight">Normal</p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>

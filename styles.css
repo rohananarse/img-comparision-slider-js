@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  width: 750px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+.wrapper .images {
+  width: 100%;
+  display: flex;
+}
+.wrapper .images .img-1 {
+  height: 100%;
+  width: 100%;
+}
+.wrapper .images .img-2 {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+.wrapper .slider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  height: 100%;
+}
+.wrapper .slider input {
+  width: 100%;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+}
+.slider input::-webkit-slider-thumb {
+  height: 486px;
+  width: 3px;
+  background: none;
+  -webkit-appearance: none;
+  cursor: col-resize;
+}
+
+.slider .drag-line {
+  width: 3px;
+  height: 486px;
+  position: absolute;
+  left: 49.85%;
+  pointer-events: none;
+}
+.slider .drag-line::before,
+.slider .drag-line::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.slider .drag-line span {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  top: 45%;
+  background-color: #c00;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  z-index: 1;
+}
+
+.slider .drag-line span :active {
+  opacity: 0;
+  pointer-events: all;
+}
+.opac {
+  visibility: hidden;
+}
+
+.oopac {
+  opacity: 0;
+}
